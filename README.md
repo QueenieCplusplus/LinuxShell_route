@@ -47,3 +47,16 @@ usage
           | metric + [M]  | metric field, 指定路由表中的欄位長度      |
           +---------------+---------------------------------------+
           +---------------+-----------------------------+
+
+# Unix Bash Alternative
+
+    netstat -n
+
+      ✗ netstat
+      Active Internet connections
+      Proto Recv-Q Send-Q  Local Address          Foreign Address        (state)    
+      tcp4       0      0  192.168.100.24.50346   tsa01s07-in-f10..https ESTABLISHED
+      tcp4       0      0  192.168.100.24.50345   tsa01s07-in-f10..https ESTABLISHED
+      tcp4       0      0  192.168.100.24.50344   nrt13s51-in-f14..https ESTABLISHED
+      tcp4       0      0  192.168.100.24.50343   tsa03s06-in-f10..https ESTABLISHED
+      tcp4       0      0  192.168.100.24.50342   nrt13s51-in-f14..https ESTABLISHED
