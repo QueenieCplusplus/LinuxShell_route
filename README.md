@@ -50,7 +50,7 @@ usage
 
 # Unix Bash Alternative
 
-    netstat -n
+    netstat 
 
       ✗ netstat
       Active Internet connections
@@ -60,3 +60,25 @@ usage
       tcp4       0      0  192.168.100.24.50344   nrt13s51-in-f14..https ESTABLISHED
       tcp4       0      0  192.168.100.24.50343   tsa03s06-in-f10..https ESTABLISHED
       tcp4       0      0  192.168.100.24.50342   nrt13s51-in-f14..https ESTABLISHED
+
+
+    ✗ netstat -nr
+    
+      Routing tables
+
+      Internet:
+      Destination        Gateway            Flags        Netif Expire
+      default            192.168.100.1      UGSc           en0       
+      127                127.0.0.1          UCS            lo0       
+      127.0.0.1          127.0.0.1          UH             lo0       
+      169.254            link#4             UCS            en0      !
+      192.168.100        link#4             UCS            en0      !
+      192.168.100.1/32   link#4             UCS            en0      !
+      192.168.100.1      0:9:f:b9:4c:52     UHLWIir        en0   1177
+      192.168.100.3      f0:99:b6:31:7:d1   UHLWI          en0     83
+      192.168.100.13     1c:91:48:9d:48:c7  UHLWIi         en0   1012
+      192.168.100.24/32  link#4             UCS            en0      !
+      192.168.100.255    ff:ff:ff:ff:ff:ff  UHLWbI         en0      !
+      224.0.0/4          link#4             UmCS           en0      !
+      224.0.0.251        1:0:5e:0:0:fb      UHmLWI         en0       
+      255.255.255.255/32 link#4             UCS            en0      !
