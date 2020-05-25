@@ -122,4 +122,14 @@ usage
       0 requests for memory delayed
       0 calls to drain routines
       
-      
+(2) netstat -rs
+
+      ✗ netstat -rs
+      routing:
+            0 bad routing redirect
+            0 dynamically created route
+            0 new gateway due to redirects
+            13492 destinations found unreachable
+            0 use of a wildcard route
+            0 lookup returned indirect routes pointing to indirect gateway route
+            1 route not in table but not freed
