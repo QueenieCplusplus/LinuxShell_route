@@ -66,6 +66,8 @@ usage
     * -host: 指定主機位址。
     
     * target: 目的地位址：
+    
+    * dev: 用以指定介面卡。
       
 
 * the arg for cmd
