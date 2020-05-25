@@ -288,6 +288,9 @@ usage
                   0 timer drift less or equal to 500 ms
                   0 timer drift less or equal to 1000 ms
                   0 timer drift greater than to 1000 ms
+                  
+* udp
+
             udp:
                   18821 datagrams received
                         0 with incomplete header
@@ -349,6 +352,9 @@ usage
                         0 packet dropped due to no bufs for control data
                         0 packet dropped due to NECP policy
                         199021 headers (3980456 bytes) checksummed in software
+                        
+* icmp
+
             icmp:
                   326 calls to icmp_error
                   0 error not generated 'cuz old message was icmp
@@ -381,6 +387,9 @@ usage
                   332 membership reports received for groups to which we belong
                   0 V3 report received without Router Alert
                   4 membership reports sent
+                  
+* ipsec
+
             ipsec:
                   0 inbound packet processed successfully
                   0 inbound packet violated process security policy
@@ -398,6 +407,9 @@ usage
                   0 invalid outbound packet
                   0 outbound packet failed due to insufficient memory
                   0 outbound packet with no route
+                  
+* arp
+
             arp:
                   70 broadast ARP requests sent
                   0 unicast ARP request sent
@@ -462,199 +474,9 @@ usage
                         0 input packet dropped due to too short length 
                         0 input packet dropped due to missing CLAT46 IPv6 address
                         0 input packet dropped due to missing CLAT46 IPv4 address
-                        0 input packet dropped due to CLAT46 IPv4 address derivation failure
-                        0 input packet dropped due to CLAT46 IP header translation failure
-                        0 input packet dropped due to CLAT46 protocol translation failure
-                        0 input packet dropped due to CLAT46 fragment translation failure
-                        0 input packet dropped due to invalid pbuf
-                        0 input IPv4 packet dropped on CLAT46 enabled interface
-                        0 input packet dropped due to CLAT46 failures
-                        0 input packet successfully translated from IPv6 to IPv4
-                  5639 packets sent from this host
-                        0 packet sent with fabricated ip header
-                        0 output packet dropped due to no bufs, etc.
-                        528 output packets discarded due to no route
-                        0 output datagram fragmented
-                        0 fragment created
-                        0 datagram that can't be fragmented
-                        0 packet that violated scope rules
-                        0 packet dropped due to NECP policy
-                        0 output packet dropped due to missing CLAT46 IPv6 address
-                        0 output packet dropped due to CLAT46 IPv6 address synthesis failure
-                        0 output packet dropped due to CLAT46 IP header translation failure
-                        0 output packet dropped due to CLAT46 protocol translation failure
-                        0 output packet dropped due to CLAT46 fragment translation failure
-                        0 output packet dropped due to invalid pbuf
-                        0 output packet dropped due to CLAT46 failures
-                        0 output packet successfully translated from IPv4 to IPv6
-                  Input histogram:
-                        hop by hop: 511
-                        UDP: 15985
-                        ICMP6: 247
-                  Mbuf statistics:
-                        839 one mbuf
-                        two or more mbuf:
-                              lo0= 389
-                        15515 one ext mbuf
-                        0 two or more ext mbuf
-                        0 failure of source address selection
-                        source addresses on an outgoing I/F
-                              0 addresses scope=0
-                              0 node-local
-                              0 link-local
-                              0 addresses scope=3
-                              0 addresses scope=4
-                              0 site-local
-                              0 addresses scope=6
-                              0 addresses scope=7
-                              0 addresses scope=8
-                              0 addresses scope=9
-                              0 addresses scope=a
-                              0 addresses scope=b
-                              0 addresses scope=c
-                              0 addresses scope=d
-                              0 global
-                              0 addresses scope=f
-                        source addresses on a non-outgoing I/F
-                              0 addresses scope=0
-                              0 node-local
-                              0 link-local
-                              0 addresses scope=3
-                              0 addresses scope=4
-                              0 site-local
-                              0 addresses scope=6
-                              0 addresses scope=7
-                              0 addresses scope=8
-                              0 addresses scope=9
-                              0 addresses scope=a
-                              0 addresses scope=b
-                              0 addresses scope=c
-                              0 addresses scope=d
-                              0 global
-                              0 addresses scope=f
-                        source addresses of same scope
-                              0 addresses scope=0
-                              0 node-local
-                              0 link-local
-                              0 addresses scope=3
-                              0 addresses scope=4
-                              0 site-local
-                              0 addresses scope=6
-                              0 addresses scope=7
-                              0 addresses scope=8
-                              0 addresses scope=9
-                              0 addresses scope=a
-                              0 addresses scope=b
-                              0 addresses scope=c
-                              0 addresses scope=d
-                              0 global
-                              0 addresses scope=f
-                        source addresses of a different scope
-                              0 addresses scope=0
-                              0 node-local
-                              0 link-local
-                              0 addresses scope=3
-                              0 addresses scope=4
-                              0 site-local
-                              0 addresses scope=6
-                              0 addresses scope=7
-                              0 addresses scope=8
-                              0 addresses scope=9
-                              0 addresses scope=a
-                              0 addresses scope=b
-                              0 addresses scope=c
-                              0 addresses scope=d
-                              0 global
-                              0 addresses scope=f
-                        deprecated source addresses
-                              0 addresses scope=0
-                              0 node-local
-                              0 link-local
-                              0 addresses scope=3
-                              0 addresses scope=4
-                              0 site-local
-                              0 addresses scope=6
-                              0 addresses scope=7
-                              0 addresses scope=8
-                              0 addresses scope=9
-                              0 addresses scope=a
-                              0 addresses scope=b
-                              0 addresses scope=c
-                              0 addresses scope=d
-                              0 global
-                              0 addresses scope=f
-                        source address selection
-                              296 rules default
-                              0 rule prefer same address
-                              0 rule prefer appropriate scope
-                              0 rule avoid deprecated addresses
-                              0 rule prefer home addresses
-                              0 rule prefer outgoing interface
-                              187 rules prefer matching label
-                              0 rule prefer temporary addresses
-                              0 rule prefer addresses on alive interfaces
-                              0 rule use longest matching prefix
-                        0 duplicate address detection collision
-                        0 duplicate address detection NS loop
-                        0 time ignored source on secondary expensive I/F
-            icmp6:
-                  0 call to icmp_error
-                  0 error not generated because old message was icmp error or so
-                  0 error not generated because rate limitation
-                  Output histogram:
-                        router solicitation: 7
-                        neighbor solicitation: 24
-                        neighbor advertisement: 12
-                        MLDv2 listener report: 14
-                  0 message with bad code fields
-                  0 message < minimum length
-                  0 bad checksum
-                  0 message with bad length
-                  Input histogram:
-                        router advertisement: 60
-                        neighbor solicitation: 12
-                        neighbor advertisement: 14
-                  Histogram of error messages to be generated:
-                        0 no route
-                        0 administratively prohibited
-                        0 beyond scope
-                        0 address unreachable
-                        0 port unreachable
-                        0 packet too big
-                        0 time exceed transit
-                        0 time exceed reassembly
-                        0 erroneous header field
-                        0 unrecognized next header
-                        0 unrecognized option
-                        0 redirect
-                        0 unknown
-                  0 message response generated
-                  0 message with too many ND options
-                  0 message with bad ND options
-                  0 bad neighbor solicitation message
-                  0 bad neighbor advertisement message
-                  0 bad router solicitation message
-                  0 bad router advertisement message
-                  0 bad redirect message
-                  0 path MTU change
-                  0 dropped fragmented NDP message
-            ipsec6:
-                  0 inbound packet processed successfully
-                  0 inbound packet violated process security policy
-                  0 inbound packet with no SA available
-                  0 invalid inbound packet
-                  0 inbound packet failed due to insufficient memory
-                  0 inbound packet failed getting SPI
-                  0 inbound packet failed on AH replay check
-                  0 inbound packet failed on ESP replay check
-                  0 inbound packet considered authentic
-                  0 inbound packet failed on authentication
-                  0 outbound packet processed successfully
-                  0 outbound packet violated process security policy
-                  0 outbound packet with no SA available
-                  0 invalid outbound packet
-                  0 outbound packet failed due to insufficient memory
-                  0 outbound packet with no route
+                        0 input packet dropped due to CLAT46 IPv4 address 
+* rip
+
             rip6:
                   0 message received
                   0 checksum calculation on inbound
