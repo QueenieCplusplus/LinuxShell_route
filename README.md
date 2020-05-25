@@ -68,6 +68,8 @@ usage
     * target: 目的地位址：
     
     * dev: 用以指定介面卡。
+    
+    * gw: 閘道。
       
 
 * the arg for cmd
