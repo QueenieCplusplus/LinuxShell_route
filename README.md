@@ -7,6 +7,10 @@ usage
 
       route [args] cmd [[modifiers] args]
       
+內部指令的使用情境
+
+    route add -net 192.56.76.0 netmask 255.255.255.0 dev eth0
+      
  * args
  
     * a all, 顯示所有連接中的 socket。
