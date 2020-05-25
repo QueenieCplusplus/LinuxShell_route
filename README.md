@@ -90,7 +90,7 @@ usage
       255.255.255.255/32 link#4             UCS            en0      !
 
 
-* params for netsat
+* args for netsat
 
       ✗ netstat -o
       Usage:	
