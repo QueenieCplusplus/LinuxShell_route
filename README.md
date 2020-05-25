@@ -9,9 +9,39 @@ usage
       
  * args
  
-    （略）
+    * a all, 顯示所有連接中的 socket。
+    
+    * c continues, 持續列出網路狀態。
+     
+    * C Cache, 顯示路由的快取資訊。
+    
+    * F, Forward Info, 顯示轉發的基本資訊。
+    
+    * g, group, 顯示 Multicast 群組名稱。
+     
+    * I, Interface, 顯示網路介面資訊的表單。
+    
+    * l, list, 顯示監控中伺服器的 Socket。
+    
+    * n, name no, 直接使用 IP addr, 不使用名稱。
+    
+    * o, ouptput counter, 顯示計時器。
+     
+    * p, pid, 顯示計時器。
+    
+    * r, routing tale, 顯示路由表。
+    
+    * s, statistics, 顯示網路資訊統計表。
+     
+    * t, tcp, 顯示 TCP 連線狀況。
+    
+    * u, ucp, 顯示 UCP 連線狀況。
+    
+    * w, 顯示 RAW 連線狀況。
+    
+    * x, 列出 Unix 傳輸協定連線中的相關位址。
+    
  
-
 * cmd
 
     * add: 增加路由紀錄。
