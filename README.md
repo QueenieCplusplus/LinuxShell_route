@@ -102,3 +102,24 @@ usage
             netstat -m [-m]
             netstat -r [-Aaln] [-f address_family]
             netstat -rs [-s]
+
+
+(1) netstat -m
+
+      ✗ netstat -m
+      
+      484/1238 mbufs in use:
+            244 mbufs allocated to data
+            240 mbufs allocated to packet tags
+            754 mbufs allocated to caches
+            
+      240/1004 mbuf 2KB clusters in use
+      0/1096 mbuf 4KB clusters in use
+      0/41 mbuf 16KB clusters in use
+      7549 KB allocated to network (8.1% in use)
+      0 KB returned to the system
+      0 requests for memory denied
+      0 requests for memory delayed
+      0 calls to drain routines
+      
+      
