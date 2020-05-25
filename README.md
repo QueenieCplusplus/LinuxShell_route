@@ -20,7 +20,7 @@ usage
     route change 10.10.195.251/32 10.10.195.10
     // 將 10.10.195.251/32 網段流量的 gw 改成 10.10.195.10。
     
- * args
+ * args (route 指令的參數)
  
     * a all, 顯示所有連接中的 socket。
     
@@ -55,7 +55,7 @@ usage
     * x, 列出 Unix 傳輸協定連線中的相關位址。
     
  
-* cmd
+* cmd (內部指令)
 
     * add: 增加路由紀錄。
     
@@ -67,14 +67,14 @@ usage
     
     * target: 目的地位址。
     
-    * netmask: 目的地 IP 遮罩。
+    * netmask: 目的地 IP 遮罩。 // 內部指令的參數 (注意)
     
-    * dev: 用以指定介面卡。
+    * dev: 用以指定介面卡。// 內部指令的參數 （注意）
     
-    * gw: 閘道。
+    * gw: 閘道。// 內部指令的參數 (注意)
       
 
-* the arg for cmd
+* the arg for cmd (內部指令的參數)
 
    * frequently usage
 
