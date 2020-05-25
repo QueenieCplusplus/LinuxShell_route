@@ -10,6 +10,10 @@ usage
 內部指令的使用情境
 
     route add -net 192.56.76.0 netmask 255.255.255.0 dev eth0
+    
+    route add -net 10.10.10.0 netmask 255.255.255.0 gw 10.10.10.1
+    
+    
       
  * args
  
