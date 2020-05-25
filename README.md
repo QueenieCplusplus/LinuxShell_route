@@ -65,7 +65,9 @@ usage
     
     * -host: 指定主機位址。
     
-    * target: 目的地位址：
+    * target: 目的地位址。
+    
+    * netmask: 目的地 IP 遮罩。
     
     * dev: 用以指定介面卡。
     
