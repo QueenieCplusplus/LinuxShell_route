@@ -85,7 +85,7 @@ usage
       192.168.100.255    ff:ff:ff:ff:ff:ff  UHLWbI         en0      !
       
       224.0.0/4          link#4             UmCS           en0      !
-      224.0.0.251        1:0:5e:0:0:fd      UHmLWI         en0       
+      224.0.0.251        1:0:5e:0:0:fe      UHmLWI         en0       
       
       255.255.255.255/32 link#4             UCS            en0      !
 
